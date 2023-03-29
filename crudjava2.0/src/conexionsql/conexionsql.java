@@ -19,7 +19,7 @@ public class conexionsql {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             conectar=(Connection) DriverManager.getConnection("jdbc:mysql://localhost/zapateria2","root","");
-             JOptionPane.showMessageDialog(null, "conecion exitosa");
+             
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "error de conexion  "+ e.getMessage());
         }
